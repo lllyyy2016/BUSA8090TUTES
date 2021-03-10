@@ -1,0 +1,604 @@
+    1  exit
+    2  ls
+    3  nano test.txt
+    4  vimtutor
+    5  exit
+    6  ls
+    7  man scp
+    8  ls
+    9  logout
+   10  nano test.txt
+   11  ls
+   12  rm *
+   13  rm -r BUSA8090 
+   14  ls
+   15  cd week1
+   16  ls
+   17  cd ..
+   18  nano TEST.txt
+   19  pwd
+   20  ls
+   21  man cp
+   22  cp week1 lab
+   23  cp -r week1 lab
+   24  s
+   25  ls
+   26  cd lab
+   27  ls
+   28  man mkdir
+   29  mkdir -p data/wk04
+   30  cd data/wk04
+   31  ls
+   32  cd ~/lab
+   33  ls
+   34  mv -i wk04*txt wk04/data
+   35  mv -i wk04*.txt wk04/data
+   36  mv -i  wk04*txt wk04/data
+   37  rm -r data
+   38  mkdir -p wk04/data
+   39  mv -i wk04*txt wk04/data
+   40  cd wk04/data
+   41  cd wk04/data
+   42  cd wk04/data
+   43  ls
+   44  head -1 wk04_student_data.txt
+   45  man set
+   46  set -o vi
+   47  set
+   48  head -1 wk04_student_data.txt | sed "s/\t/ ** /g"
+   49  head -1 wk04_student_data.txt
+   50  man cat
+   51  cat > what.txt
+   52  ls
+   53  vi what.txt
+   54  rm what.txt
+   55  man sed
+   56  man cat
+   57  vi con-sh-exe.sh
+   58  ./con-sh-exe.sh
+   59  sudo ./con-sh-exe.sh
+   60  chmod 777 con-sh-exe.sh
+   61  sudo ./con-sh-exe.sh
+   62  ./con-sh-exe.sh
+   63  vi con-sh-exe,sh
+   64  vi con-sh-exe.sh
+   65  head -10 wk04_student_data.txt | sed "s/\t/ ** /g"
+   66  head -10 wk04_student_data.txt
+   67  awk -F"\t" 'print $5 $6 $7 $14 $15'|head -2
+   68  awk -F"\t" 'print $5,$6,$7,$14,$15' wk04_student_data.txt | head -2
+   69  awk -F"\t" '{print $5, $6}' wk04_student_data.txt |head -4
+   70  awk -F"\t" '{print $5, $6}' wk04_student_data.txt
+   71  history
+   72  history > history.txt
+   73  ls
+   74  rm con-sh-exe.sh
+   75  head -10 history.txt
+   76  cat history.txt | head -10
+   77  rm history.txt
+   78  ls
+   79  cd
+   80  ls
+   81  cd Filezilla
+   82  ls
+   83  cd
+   84  ls
+   85  cd lab/wk04/data
+   86  ls
+   87  awk -F"\t" '{print $5, $6}' wk04_student_data.txt |head -4
+   88  awk -F"\t" /En/ '{print $5, $6}' wk04_student_data.txt |head -4
+   89  awk -F"\t" '/En/ {print $5, $6}' wk04_student_data.txt |head -4
+   90  head -1 wk04_student_data.txt | sed "s/\t/ ** /g"
+   91  awk -F"\t" '{print $6, $7, $8, $14, $15}' wk04_student_data.txt |head -4
+   92  man sort
+   93  sort -n 6 wk04_student_data.txt
+   94  sort -t '\t' -n -k 6 wk04_student_data.txt|head -4
+   95  sort -n -k 6 wk04_student_data.txt|head -4
+   96  sort -n -k 6.1 wk04_student_data.txt|head -4
+   97  man sort
+   98  cat test.csv
+   99  cat test
+  100  cat > test.csv
+  101  ls
+  102  sort -n -k 1 test.csv
+  103  nano test.csv
+  104  sort -n -k 1 test.csv
+  105  sort -n -k 1 2 test.csv
+  106  sort -n -k 12 test.csv
+  107  head -3 test.csv
+  108  sort -n -k [1.1,2] test.csv
+  109  man sort
+  110  sort -n -k 1.1,2 test.csv
+  111  sort -n -k 1.1,2.1 test.csv
+  112  vi test.csv
+  113  sort -n -k 1.1,2.1 test.csv
+  114  sort -n -k 1.1,3.1 test.csv
+  115  sort -n -k 1,3 test.csv
+  116  sort -n -k1 -k3 test.csv
+  117  sort -n -k1,2 test.csv
+  118  sort -n -k1,3 test.csv
+  119  sort -n -k 1,3 test.csv
+  120  sort -n -k 6 wk04_student_data.txt|head -4
+  121  sort -t"\t" -n -k 6 wk04_student_data.txt|head -4
+  122  sort -t'\t' -n -k 6 wk04_student_data.txt|head -4
+  123  sort -t '\t' -n -k 6 wk04_student_data.txt|head -4
+  124  sort -t$'\t' -n -k6 wk04_student_data.txt | awk -F"\t" '{print $6}'
+  125  man sort
+  126  man SEP
+  127  man sort
+  128  sort -t '\t' -n -k6 wk04_student_data.txt | awk -F"\t" '{print $6}'
+  129  sort -t ' ' -n -k6 wk04_student_data.txt | awk -F"\t" '{print $6}'
+  130  sort -t '\t' -n -k6 wk04_student_data.txt | awk -F"\t" '{print $6}'
+  131  sed '2,$p' wk04_IT_details.txt
+  132  sed '2,$p' wk04_IT_details.txt | head -4
+  133  cat wk04_IT_details.txt | head -4
+  134  man sed
+  135  sed -n '2,$p' wk04_IT_details.txt | sort -n
+  136  sed -n '2,$p' wk04_IT_details.txt
+  137  man sed
+  138  sed '2,$p' wk04_IT_details.txt
+  139  sed -n '2,$p' wk04_IT_details.txt
+  140  vi gcr.sh
+  141  ./gcr.sh
+  142  chmod +x gcr.sh
+  143  ./gcr.sh
+  144  chmod 777 gcr.sh
+  145  ./gcr.sh
+  146  vi gcr.sh
+  147  ./gcr.sh
+  148  vi gcr.sh
+  149  ./gcr.sh
+  150  vi gcr.sh
+  151  ./gcr.sh
+  152  ls
+  153  awk '4+21'
+  154  ls
+  155  awk '{4+21}'
+  156  awk '{print 4+21}'
+  157  awk 'print 4+21'
+  158  awk '{printf 4+21}'
+  159  awk
+  160  awk '{print log(2)}'
+  161  awk '{print 4+21}'
+  162  awk
+  163  man awk
+  164  bc
+  165  perl -le 'print 4+2'
+  166  man perl
+  167  curl -s 'http://www.gutenberg.org/browse/scores/top' | grep -E '^<li>' | head -n 5 | sed -E "s/.*ebooks\/([0-9]+).*/\\1/" > top-5
+  168  vi top-5
+  169  man curl
+  170  man less
+  171  history 50|less
+  172  history 50|more
+  173  man join
+  174  join -1 6 wk04_student_dataS.txt wk04_IT_details.txt
+  175  sed -n '2,$p' wk04_student_data.txt | sort -t$'\t' -n -k6 > wk04_student_dataS.txt
+  176  join -1 6 wk04_student_dataS.txt wk04_IT_details.txt'
+  177  join -t$'\t' -1 6 wk04_student_dataS.txt wk04_IT_details.txt
+  178  join -t$'\t' -1 6 wk04_student_dataSn.txt wk04_IT_detailsSn.txt
+  179  sed -n '2,$p' wk04_IT_details.txt | sort -t$'\t' > wk04_IT_detailsSn.txt
+  180  join -t$'\t' -1 6 wk04_student_dataSn.txt wk04_IT_detailsSn.txt
+  181  sed -n '2,$p' wk04_student_data.txt | sort -t$'\t' -k6 > wk04_student_dataSn.txt
+  182  join -t$'\t' -1 6 wk04_student_dataSn.txt wk04_IT_detailsSn.txt
+  183  history 294
+  184  history 2
+  185  tar xvzf wk01.tar.gz
+  186  man join
+  187  cd
+  188  ls
+  189  rm -r Filezilla TEST.txt 
+  190  ls
+  191  rm -r lab week1
+  192  ls
+  193  logout
+  194  To see these additional updates run: apt list --upgradable
+  195  man tar
+  196  ls
+  197  cd week1
+  198  ls
+  199  cd..
+  200  cd ..
+  201  nano TEST.txt
+  202  ls
+  203  nano TEST.txt
+  204  ls
+  205  awk -F"\t" 'print $5 $6 $7 $14 $15'|head -2
+  206  man awk
+  207  loout
+  208  logout
+  209  echo $0
+  210  man awk
+  211  history|grep
+  212  history | grep -i hist
+  213  cd
+  214  ls
+  215  mkdir BUSA8090
+  216  cd BUSA8090
+  217  mkdir week3
+  218  cd week3
+  219  ls
+  220  mkdir scripts
+  221  sudo apt update
+  222  sudo apt install vim
+  223  vim con-sh-exe.sh
+  224  chmod u+x con-sh-exe.sh
+  225  history |grep .sh
+  226  ./con-sh-exe.sh
+  227  logout
+  228  exit
+  229  shell
+  230  man bash
+  231  bash
+  232  logout
+  233  exit
+  234  bash
+  235  exit
+  236  Last login: Thu Mar  4 07:24:24 2021 from 203.132.92.58
+  237  clear
+  238  mkdir dir1
+  239  cd dir1
+  240  mkdir dir2
+  241  cd dir2
+  242  cd .
+  243  cd
+  244  df
+  245  df -h
+  246  wget "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt"
+  247  wget "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" > download_test.txt
+  248  ls
+  249  cat download_test.txt
+  250  wget "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" dir1
+  251  cd dir1
+  252  ls
+  253  cd ..
+  254  man wget
+  255  wget "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" -d dir1
+  256  cd dir1
+  257  ls
+  258  cd ..
+  259  wget -O dir1/ "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" 
+  260  ls
+  261  wget -O dir1 "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" 
+  262  wget -O dir1/test.txt "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" 
+  263  cd dir1
+  264  ls
+  265  cd ..
+  266  cd dir2
+  267  cd dir1
+  268  cat test.txt
+  269  curl -O dir1/test.txt "ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt" 
+  270  cat
+  271  cat > file.txt
+  272  bash
+  273  cd
+  274  logout
+  275  echo $PATH
+  276  echo PATH
+  277  man sh
+  278  sh
+  279  echo #user
+  280  echo $user
+  281  echo $USER
+  282  USER
+  283  env
+  284  echo \t
+  285  echo -e \t
+  286  echo -e \\t
+  287  echo \\t
+  288  ls
+  289  cd BUSA8090
+  290  ls
+  291  cd week3
+  292  ls
+  293  cd scripts
+  294  ls
+  295  cd ..
+  296  mv *.sh scripts
+  297  ls
+  298  cd scripts
+  299  ls
+  300  nano text.sh
+  301  chmod u+x text.sh
+  302  ./text.sh
+  303  ls
+  304  nano text.sh
+  305  ./text.sh
+  306  nano chg-pwd.sh
+  307  chmod u+x chg-pwd.sh
+  308  ./chg-pwd.sh
+  309  echo $pwd
+  310  echo $PWD
+  311  cd ..
+  312  mkdir textbook
+  313  cd textbook
+  314  wget -r -l 1 https://www.staff.hs-mittweida.de/~wuenschi/doku.php?id=rwbook2
+  315  ls
+  316  cd "www.staff.hs-mittweida.de
+  317  "
+  318  cd "www.staff.hs-mittweida.de"
+  319  ls
+  320  cd wuenschi
+  321  ls
+  322  cd lib
+  323  ls
+  324  cd tpl
+  325  ls
+  326  cd ..
+  327  wget -r -np -k https://www.staff.hs-mittweida.de/~wuenschi/doku.php?id=rwbook2
+  328  ls
+  329  cd "www.staff.hs-mittweida.de"
+  330  ls
+  331  cd wuenschi
+  332  ls
+  333  cd lib
+  334  ls
+  335  cd tpl
+  336  ls
+  337  cd doogiestpl
+  338  ls
+  339  cd ..
+  340  ls
+  341  find "www.staff.hs-mittweida.de
+  342  "
+  343  find "www.staff.hs-mittweida.de" type .awk
+  344  man wget
+  345  ls
+  346  rm www.staff.hs-mittweida.de
+  347  rm -r www.staff.hs-mittweida.de
+  348  wget -r -l1 --no-parent -A awk,pl,pm,sql,tab,gz,r,tab,txt,sh,fasta,jmol,dna,pdb,sed,vi https://www.staff.hs-mittweida.de/~wuenschi/doku.php?id=rwbook2 
+  349  ls
+  350  cd www.staff.hs-mittweida.de
+  351  ls
+  352  cd '~wuenschi'
+  353  ls
+  354  cd BUSA8090
+  355  ls
+  356  cd textbook
+  357  ls
+  358  cd 'www.staff.hs-mittweida.de
+  359  '
+  360  cd 'www.staff.hs-mittweida.de'
+  361  ls
+  362  cd '~wuenschi'
+  363  ls
+  364  cd data
+  365  ls
+  366  cd media
+  367  ls
+  368  cd compbiolbook
+  369  ls
+  370  cd ..
+  371  mv compbiolbook ~/BUSA8090/textbook
+  372  cd ~/BUSA8090/textbook
+  373  ls
+  374  mv compbiolbook bookscript
+  375  ls
+  376  rm 'www.staff.hs-mittweida.de
+  377  '
+  378  rm 'www.staff.hs-mittweida.de'
+  379  rm -r 'www.staff.hs-mittweida.de'
+  380  ls
+  381  cd ..
+  382  ls
+  383  cd week3
+  384  ls
+  385  cd scripts
+  386  ls
+  387  ./text.sh
+  388  ./chg-pwd.sh
+  389  $pwd
+  390  echo $pwd
+  391  test =1
+  392  echo $test
+  393  echo $PWD
+  394  pwd
+  395  echo $pwd
+  396  echo $PWD
+  397  $HOME
+  398  vi grep_file_seq.sh
+  399  find -type f -name "*.dna" -exec grep TATAAT {}\;
+  400  find -type f -name "*.dna" -exec grep TATAAT 
+  401  find -type f -name "*.dna" -exec grep TATAAT {} \;
+  402  find $HOME -type f -name "*.dna" -exec grep TATAAT {} \;
+  403  find ~BUSA8090/textbook -type f -name "*.dna" -exec grep TATAAT {} \;
+  404  find ~/BUSA8090/textbook -type f -name "*.dna" -exec grep TATAAT {} \;
+  405  vi grep_file_seq.sh
+  406  ./grep_file_seq.sh
+  407  chmod u+x grep_file_seq.sh
+  408  ./grep_file_seq.sh
+  409  ./grep_file_seq.sh dna TATAAT
+  410  ./grep_file_seq.sh dna 
+  411  ls
+  412  echo "test $PWD "
+  413  echo "test\ $PWD "
+  414  echo "test\ \$PWD "
+  415  echo 'test $PWD'
+  416  cd ..
+  417  cd..
+  418  cd ..
+  419  ls
+  420  mkdir BUSA8090TUTES
+  421  ls
+  422  cd BUSA8090TUTES
+  423  LS
+  424  ls
+  425  mkdir
+  426  mkdir week3
+  427  cd week3
+  428  vi dna-test.sh
+  429  cd ~/BUSA8090/textbook/
+  430  ls
+  431  cd bookscript
+  432  ls
+  433  mv chapter-11-regex--sequence.dna ~/BUSA8090/BUSA8090TUTES
+  434  cd ~/BUSA8090/BUSA8090TUTES
+  435  ls
+  436  mv chapter-11-regex--sequence.dna week3/seq/dna
+  437  mv chapter-11-regex--sequence.dna week3/seq.dna
+  438  ls
+  439  cd week3
+  440  ls
+  441  vi dna-test.sh
+  442  ./dna-test.sh seq.dna
+  443  vi dna-test.sh
+  444  ./dna-test.sh seq.dna
+  445  vi dna-test.sh
+  446  ./dna-test.sh seq.dna
+  447  vi time-signal.sh
+  448  chmod u+x time-signal.sh
+  449  ./time-signal.sh
+  450  vi time-signal.sh
+  451  ./time-signal.sh
+  452  vi archive-pwd-i.sh
+  453  chmod archive-pwd-i.sh
+  454  chmod u+x archive-pwd-i.sh
+  455  ./archive-pwd-i.sh
+  456  ls
+  457  cd archive
+  458  vi archive
+  459  ./archive-pwd-i.sh
+  460  vi archive-pwd-i.sh
+  461  vi space-convert.sh
+  462  chmod u+x space-convert.sh
+  463  ./space-convert.sh
+  464  ls
+  465  vi 'test with space'
+  466  ./space-convert.sh
+  467  ls
+  468  rm 'test with space'
+  469  vi 'test with space.txt'
+  470  ./space-convert.sh
+  471  vi space-convert.sh
+  472  l
+  473  cd ..
+  474  ls
+  475  cd ..
+  476  ls
+  477  cd ..
+  478  ls
+  479  cd BUSA8090TUTES
+  480  cd BUSA8090
+  481  ls
+  482  cd textbook
+  483  ls
+  484  cd bookscript
+  485  ls
+  486  cd
+  487  ls
+  488  rm TEST.txt download_test.txt gbrel.txt gbrel.txt.1 gbrel.txt.2 gbrel.txt.3
+  489  rm -r week1
+  490  ls
+  491  cd -r dir1
+  492  ls
+  493  rm -r dir1
+  494  ls
+  495  cd BUSA8090
+  496  CD BUSA8090TUTES
+  497  cd BUSA8090TUTES
+  498  ls
+  499  cd week3
+  500  ls
+  501  rm archive
+  502  ./space-convert.sh
+  503  vi space-convert.sh
+  504  ./space-convert.sh
+  505  vi space-convert.sh
+  506  ./space-convert.sh
+  507  cd
+  508  cd BUSA8090/textbook
+  509  ls
+  510  cd bookscript
+  511  ls
+  512  mv '
+  513  s
+  514  mv '
+  515  mv '
+  516  mv 'chapter-10-shell-programming--space-convert.sh' ~/BUSA8090/week3/
+  517  cd
+  518  cd BUSA8090
+  519  LS
+  520  ls
+  521  rm -r week3
+  522  cd textbook
+  523  mv 'chapter-10-shell-programming--space-convert.sh' ~/BUSA8090/BUSA8090TUTES
+  524  mv 'chapter-10-shell-programming--space-convert.sh' ~/BUSA8090/BUSA8090TUTES/
+  525  cd bootscript
+  526  cd bookscript
+  527  ls
+  528  mv 'chapter-10-shell-programming--space-convert.sh' ~/BUSA8090/BUSA8090TUTES/
+  529  curl -O http://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-10-shell-programming--space-convert.sh
+  530  ls
+  531  mv 'chapter-10-shell-programming--space-convert.sh' ~/BUSA8090/BUSA8090TUTES/
+  532  cd ~/BUSA8090/BUSA8090TUTES/
+  533  ls
+  534  mv 'chapter-10-shell-programming--space-convert.sh'week3
+  535  mv 'chapter-10-shell-programming--space-convert.sh' week3
+  536  cd weel3
+  537  cd week3
+  538  ls
+  539  ./chapter-10-shell-programming--space-convert.sh
+  540  chmod u+x chapter-10-shell-programming--space-convert.sh
+  541  ./chapter-10-shell-programming--space-convert.sh
+  542  vi chapter-10-shell-programming--space-convert.sh
+  543  rm chapter-10-shell-programming--space-convert.sh
+  544  ls
+  545  vi space-convert.sh
+  546  ./space-convert.sh
+  547  ls
+  548  vi seq.dna
+  549  vi space-convert.sh
+  550  ./space-convert.sh
+  551  mv test_with_space.txt 'test with space.txt'
+  552  ./space-convert.sh
+  553  ls
+  554  curl http://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  555  ls
+  556  curl http://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  557  ls
+  558  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  559  ls
+  560  cd
+  561  ls
+  562  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  563  ls
+  564  curl test_download.sh https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  565  ls
+  566  curl -o test_download.sh https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-12-sed--list-dir.sh
+  567  ls
+  568  vi test_download.sh
+  569  rm test_download.sh
+  570  cd BUSA8090
+  571  cd BUSA8090TUTES
+  572  ls
+  573  cd week3
+  574  ls
+  575  rm test_with_space.txt
+  576  ls
+  577  cd BUSA8090
+  578  cd BUSA8090TUTES
+  579  ls
+  580  cd week3
+  581  ls
+  582  vi exercise.sh
+  583  chmod u+x exercise.sh
+  584  ./exercise.sh
+  585  echo $@
+  586  ./exercise.sh test
+  587  expr
+  588  expr 1+1
+  589  echo $(1+1)
+  590  echo $(expr 1+1)
+  591  echo x =$(expr 1+1)
+  592  $x =$(expr 1+1)
+  593  $x=$x:$(expr 1+1)
+  594  $x=x:$(expr 1+1)
+  595  x=x:$(expr 1+1)
+  596  echo $x
+  597  echo $(expr $x+1)
+  598  expr 12+8
+  599  man expr
+  600  expr 1 + 1
+  601  ./exercise.sh par1 par2 par3
+  602  cd ..
+  603  ls
+  604  history >command_hist.txt
